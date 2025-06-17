@@ -87,7 +87,7 @@ def load_model():
     """Load the YOLOv5 model"""
     try:
         # Try to load the model from the model directory
-        model_path = "model/yolov5s_best.pt"
+        model_path = "yolov5s_best.pt"
         if os.path.exists(model_path):
             model = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path)
             return model
